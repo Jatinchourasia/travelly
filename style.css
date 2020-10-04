@@ -354,4 +354,8 @@ footer ul {
     background: rgba(19, 28, 39, 0.8);
     padding: 1rem;
   }
+
+  .form-wrapper input {
+    width: 50vw;
+  }
 }
