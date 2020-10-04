@@ -1,0 +1,357 @@
+/* global */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.4rem;
+}
+
+h3 {
+  font-size: 2.7rem;
+  font-weight: normal;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+/* nav section with hero */
+
+.main-head {
+  background: #131c27;
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  direction: none;
+}
+
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  align-items: center;
+  padding: 1.5rem;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+nav li {
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  color: rgb(247, 247, 99);
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+}
+
+.hero {
+  background-position: center;
+  background-size: cover;
+
+  min-height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./img/landing-page.jpg);
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+button {
+  border: none;
+  background: #4c6e97;
+  cursor: pointer;
+  margin: 3rem;
+  padding: 2rem 6rem;
+  color: white;
+  transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+  background: #27394e;
+}
+
+/* Locations SECTION */
+
+#Locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./img/new-york-page.png);
+
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.location-head {
+  width: 90%;
+  margin: auto;
+}
+
+.location-head h2 {
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+  padding: 1rem 0rem;
+}
+
+.location-head h3 {
+  padding: 4rem 0rem;
+  background: linear-gradient(#131c27, #bd3520);
+  background-clip: text;
+  color: rgba(0, 0, 0, 0);
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+.moving-cloud-1 {
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+.moving-cloud-2 {
+  top: 20%;
+  z-index: -1;
+  opacity: 0.5;
+  animation: cloudAnimation 4s infinite alternate ease-in-out;
+}
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(0%, 0%);
+  }
+
+  to {
+    transform: translate(10%, -10%);
+  }
+}
+
+/* benefits head */
+
+.benefits-head {
+  background: #343c44;
+  color: white;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+.benefits-head h3 {
+  padding-top: 2rem;
+}
+
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.card-icon {
+  text-align: center;
+  background: #343c44;
+}
+
+.cards img {
+  max-width: 15%;
+  margin: 2rem;
+}
+
+.card {
+  flex: 1 1 25rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h4 {
+  padding: 3rem;
+}
+.card p {
+  padding: 3rem;
+}
+
+/* contact */
+
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./img/contact-mountain.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-wrapper {
+  width: 60%;
+  border-radius: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+
+.name-form,
+.email-form {
+  padding: 3rem;
+  text-align: center;
+}
+.form-wrapper input {
+  padding: 1rem 3rem;
+}
+.form-wrapper label {
+  margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+  margin-left: 0rem;
+  width: 100%;
+  margin-bottom: 0rem;
+  margin-top: 8rem;
+  border-radius: 0 0 2rem 2rem;
+}
+
+/* footer */
+
+footer {
+  background: #343c44;
+  color: white;
+}
+
+.titl {
+  width: 90%;
+  margin: auto;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+footer h5 {
+  flex: 1 1 40rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 1 40rem;
+}
+.titl li {
+  padding: 0.5rem;
+}
+
+.titl img {
+  height: 4rem;
+}
+
+/* media quary */
+
+@media screen and (max-width: 922px) {
+  html {
+    font-size: 45%;
+  }
+
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 1rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  h5 {
+    padding: 1rem;
+  }
+
+  .cloud {
+    height: 40rem;
+    pointer-events: none;
+  }
+  .moving-cloud-1 {
+    z-index: -1;
+  }
+
+  .moving-cloud-2 {
+    top: 10%;
+    z-index: -2;
+  }
+
+  .location-head h3 {
+    padding: 4rem 0rem;
+    color: white;
+    background: rgba(19, 28, 39, 0.8);
+    padding: 1rem;
+  }
+}
